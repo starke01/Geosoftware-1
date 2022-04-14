@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="utf-8"/>
+    <meta name="Distanz" content="Berechnung von Distanzen von einem Punkt zu anderen Punkten"/>
+
+    <title>Distanzen vom Punkt zu ausgewählten Städten</title>
+    <link href="./distance.css" rel="stylesheet" type="text/css"/>
+ </head>
+
+
+  <body>
+    <div class="conatiner">
+        <h1 class="headline">Distance</h1>
+        <div class="Description">
+            <p>This table shows us the distance from the GEO1 building to each of the cities listed below.</p>
+            <p>To determine the distance, we have used the <b>Haversine</b> formula.</p>
+            <p>The coordinate of the GEO1 building is: [7.595737,51.969508].</p>
+        </div>
+        <div class="table">
+            <table>
+                <tr class="table-line">
+                    <th class="table-info" id="stadt-name">City-Name / CityPoint</th>
+                    <th class="table-info">Distance</th>
+                 </tr>
+
+                  <tbody id="tbody_id">
+                    
+                </tbody>
+                  
+            </table>
+
+        </div>
+    
+
+
+    </div>
+    
+    
+    <script type="text/javascript" src="point.js"></script>
+    <script type="text/javascript" src="cities.js"></script>
+    <script type="text/javascript" src="distanzen.js"></script>
+ </body>
+</html>

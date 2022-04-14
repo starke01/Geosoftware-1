@@ -1,0 +1,21 @@
+h1{
+    color: black;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+table, th, tr {
+    border: 5px solid black;
+    width: 65%;
+    height: 70px;
+    padding: 40px;
+    border-collapse: collapse;
+    color: black;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    margin-left: 236px;
+    
+
+}
