@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="Distanz" content="Berechnung von Distanzen von einem Punkt zu anderen Punkten"/>
+    
+
+    <title>Distanzen vom Punkt zu ausgewählten Städten</title>
+    <link href="./geojson.css" rel="stylesheet" type="text/css"/>
+ </head>
+
+
+  <body id="c">
+    
+    
+    
+    <header>
+        <nav>
+            <a href="#aktualisiere"></a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#aktulisiere" id="aktualisiere00">page reload</a>
+                        <a href="seite2.html" target="_self">to the geographical objects</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <div  class="conatiner">
+        <h1 class="headline">Distance</h1>
+        <div class="Description">
+           
+        </div>
+
+    <div>
+        <p id="left">By pressing this button you will get the current location of your browser</p><br>
+        <button class="button" id="button_location">get Location</button>
+        <p id="my_Location"></p>
+    </div>
+    <div>
+        <p>Please enter coordinates in JSON notation and then press enter</p>
+        <textarea type="text" id="text_location" placeholder="Please enter coordinates in the text field in a JSON string and confirm with the Enter key">
+        </textarea>
+        <h4>WELCOME</h4>
+        <p id="side_description">This page gives you the possibility to calculate the distance between two locations. This page offers three ways to select a location.<br>
+            This page offers three ways to select a location. With the button getLocation, you get your location back<br>
+            In the text field there is the possibility to enter coordinates in JSON format and to determine the respective distance with this location.<br>
+            Finally, there is the standard button, this takes the coordinate of the geo building and calculates the distance.<br>
+            A list of objects to which the distance is calculated is linked to "to the geographical objects".<br>
+            By clicking on it, you will be redirected to a second page where you can view the individual objects and their location. <br>
+            The distance output is done in a table and it is important to refresh the page after each created table (there is a button in the upper left corner) to be able to perform a new calculation.
+
+            
+        </p><br>
+    </div>
+    <div id="errorMessage"></div><br>
+    <div>
+        <button class="button" id="button_start"><div id="test"></div>
+            press to complete</button>
+    </div>
+    <p>click here and you will get the distance from the GEO building</p>
+    <button class="button" id="button_standard" onclick="standard()">GEO1 coordinates</button>
+    
+        <div class="table_div">
+            <table class="all_table" id="table">
+                
+                
+
+                <tbody class="t_body"  id="tbody_id">
+
+                </tbody>
+                
+
+            </table>
+
+            <div>
+                
+                    <button class="clear_complete">clear Compleate</button>
+                
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <script type="text/javascript" src="poi.js"></script>
+    <script type="text/javascript" src="point.js"></script>
+    <script type="text/javascript" src="main2.js"></script>
+ </body>
+</html> 
