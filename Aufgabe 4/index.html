@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GeoSoftware1 Assignment 4</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
+
+
+
+</head>
+<body onload="onLoad()">
+  <script src="point.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+  <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+  
+   
+
+
+  <div class="a" align="center">
+  <h1>GeoSoftware1 Assignment 4</h1>
+
+  <div>
+  	assignment: 04<br>
+  	course: Geosoftware I SoSe 2022 <br>
+  	authors: Jonas Starke <br> <br>
+
+  	This page is displaying all Bus stations of Münster in relation to a user-defined location and their distance from the user.
+    Additionally, for the closest bus station, they are displaying the according departure times.
+    In addition, you can use a polygon on the map to display the bus stops in the vicinity.
+
+    <hr>
+
+    current position geojson: <br>
+    <textarea rows="2" id="userPosition"></textarea><br>
+    <button class="button" type="button" onclick="refresh()">refresh</button>
+    <button class="button" type="button" onclick="DocumentInterface.getLocation()">my geolocation</button>
+  </div>
+  <div id="map"></div>
+  <button id="mapButton">Show my Position</button>
+
+  <br>
+  <div id="nextDepartures">
+    <p id="nextDeparturesHeader"></p>
+    <table style="width:100%" align="center" id="nextDeparturesTable">
+      <tr>
+        <th>line nr</th>
+        <th>Bus line</th>
+        <th>departure</th>
+      </tr>
+
+    </table>
+  </div>
+  <br>
+
+  <table style="width:75%" align="center" id="resultTable">
+    <tr>
+      <th>Bus stop name</td>
+      <th>Coordinates</td>
+      <th>Distance (in meters)</td>
+    </tr>
+  </table>
+
+  <div id="geoJSON" class="script" align="center">
+  </div>
+  <br>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
