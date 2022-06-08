@@ -1,0 +1,21 @@
+.card-body{
+    color: hsl(221, 62%, 28%);
+  }
+  .card-footer{
+    color: hsl(118, 55%, 35%);
+    text-align: center;
+  }
+ .nav-item:hover {
+    background-color: rgba(111, 112, 109, 0.397);
+
+  }
+  .navbar{
+      color: rgb(240, 217, 12);
+      
+  }
+  .nav-item:link{
+      background-color: rgb(240, 217, 12);
+  }
+ 
+  
+  
